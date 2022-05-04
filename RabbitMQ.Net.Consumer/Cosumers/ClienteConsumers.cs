@@ -19,7 +19,7 @@ namespace RabbitMQ.Net.Consumer.Cosumers
         {
             await Console.Out.WriteLineAsync(context.Message.nome);
 
-            _logger.LogInformation(@$"Nova mensagem recebida: {context.Message.nome} - {context.Message.cpf} - {context.Message.email}");
+            _logger.LogInformation(@$"Cliente recebido: Nome: {context.Message.nome} | CPF: {context.Message.cpf} | E-mail: {context.Message.email}");
 
         }
 

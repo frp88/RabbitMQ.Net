@@ -25,11 +25,11 @@ namespace RabbitMQ.Net.Consumer.Controllers
         {
             if (cliente != null)
             {
-                Uri uri = new Uri("rabbitmq://localhost/criarClienteQueue3");
+                Uri uri = new Uri("rabbitmq://localhost/criarClienteQueue5");
                 var endPoint = await _bus.GetSendEndpoint(uri);
                 await endPoint.Send(cliente);
 
-                return Ok("Cliente enviado com sucesso!");
+                return Ok("Cliente enviado...");
             }
 
             return BadRequest();

@@ -39,7 +39,7 @@ namespace RabbitMQ.Net.Consumer
                         h.Username("guest");
                         h.Password("guest");
                     });
-                    config.ReceiveEndpoint("criarClienteQueue3", ep =>
+                    config.ReceiveEndpoint("criarClienteQueue5", ep =>
                     {
                         ep.PrefetchCount = 10;
                         ep.ConfigureConsumer<ClienteConsumers>(provider);
